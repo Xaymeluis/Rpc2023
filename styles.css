@@ -1,0 +1,408 @@
+* {
+   /* border: 1px solid black;*/
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #06283D;
+    
+
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;         
+}
+
+header > * {    
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+#nav-bar > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar > ul > li {
+    display: inline;
+}
+
+#nav-bar > ul > li > a {
+    text-decoration: none;
+    padding: 5px;    
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#description > form > input {
+    border: none;   
+    font-size: medium;
+    font-weight: bold;
+    background-color: #47B5FF;
+    color: white;    
+    margin: 10px auto;
+    padding: 0px;    
+    height: 30px;  
+    width: 300px;
+    border-radius: 5px;
+}
+
+.grid {    
+    display: flex;
+    height: auto;
+    width: 70%;
+    margin: auto;
+}
+
+.icon {
+    margin: auto 10px auto 10px;
+}
+
+#planes {
+    margin-top: 20px;    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detalleplanes {    
+    border-radius: 10px;
+    border: 1px solid #1363df;
+    font-size: small;
+    min-width: 25%;    
+    display: flex;
+    flex-direction: column;     
+    padding: 15px; 
+    margin: 10px;
+    align-items: center;
+}
+
+.detalleplanes > ol {
+    list-style-type: none;    
+    margin: 0;
+    padding: 0;    
+}
+
+.detalleplanes > ol > li {        
+    display: flex;        
+    padding: 2px 0 2px 0;
+    justify-content: space-between;    
+}
+
+
+.detalleplanes > ol > li > span {        
+    margin:  auto 0 auto 0;
+}
+
+.detalleplanes > ol > li > #tag {        
+    font-weight: bold;
+    width: 60%;
+}
+
+.detalleplanes > ol > li > #value {         
+    width: 40%;
+    text-align: right;
+}
+
+.detalleplanes > button {             
+    border: none;   
+    font-size: medium;
+    font-weight: bold;
+    background-color: #47B5FF;
+    color: white;    
+    margin: 10px auto;
+    padding: 0px;    
+    height: 30px;  
+    width: 300px;
+    border-radius: 5px;
+}
+
+#detalleequipos {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    height: 450px;
+    width: 550px;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    font-size: small;
+    border: 1px solid #1363DF;
+    grid-template-rows: minmax(20px, auto);
+    grid-template-columns:  1fr 1fr;
+    border-radius: 10px;
+}
+
+.product > .level {
+    grid-column: 1/3;
+    grid-row: 1;    
+    margin: 20px auto 0 auto;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;    
+}
+
+.product > h2 {
+    grid-column: 1/3;
+    grid-row: 2;    
+    margin:  5px 0 5px 0;
+    padding: 0 0 5px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.product > img {
+    grid-column: 1/2;
+    height: 300px;
+    margin: auto 0 auto 0;
+    padding: 0;    
+}
+
+.product > ol {
+    height: auto;    
+    grid-column: 2/3;
+    grid-row: 3/4;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 0 -30px;
+    padding: 0px;
+}
+
+.product > ol > li{    
+    height: 140px;       
+    width: 70px;
+    display: flex;
+    flex-direction: column;    
+    margin: 0;
+    padding: 0;       
+}
+
+.product > ol > li > *{
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+.product > ol > li > img{
+    width: 40px;    
+    margin: 0px auto 0 auto;
+    padding: 0;
+}
+
+.product > ol > li > h4{    
+    margin: 0;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product > ol > li > span{    
+    text-align: center;        
+    height: 65px; 
+    margin: 0;
+    padding: 0;
+}
+
+.product > button {  
+    border: none;   
+    font-size: medium;
+    font-weight: bold;
+    background-color: #47B5FF;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 4/5;        
+    margin: 15px 0 0 -30px;
+    padding: 0px;    
+    height: 30px;  
+    border-radius: 5px;  
+}
+
+button:hover, #submit:hover {
+    cursor: pointer;
+    color: #47B5FF;
+    background-color: white;
+    border: 2px solid #47B5FF;    
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+
+.product > img {
+    height: 240px;
+}
+
+.product {
+    height: 600px;   
+}  
+
+.product > button {      
+    margin: -20px 0 0 -30px;    
+}
+
+}
+
+footer > div {
+    margin: 10px 10px 10px 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    width: 150px;   
+    border-right: 1px solid lightblue;
+}
+
+footer > div > .casa {
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+footer > div > .claro {
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    
+}
+
+footer> ul {
+    list-style-type: none;
+    margin:  auto 0 auto -10px;    
+}
+
+footer > ul > li {
+    padding: 2px;
+}
+
+footer > ul > li > a{
+    text-decoration: none;        
+}
+
+footer > span {
+    margin: auto;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+  /* The Modal (background) */  
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-size: small;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close, .close2, .close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .close2:hover,
+  .close2.focus,
+  .close3:hover,
+  .close3.focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
