@@ -144,6 +144,7 @@ header > * {
     grid-template-rows: minmax(20px, auto);
     grid-template-columns:  1fr 1fr;
     border-radius: 10px;
+    min-width: 328px;
 }
 
 .product > .level {
@@ -309,6 +310,11 @@ footer {
 
 .product > h2 {    
     font-size: 1.7rem;
+}
+
+.product > span {             
+    margin-top: -140px;
+    height: 50px; 
 }
 
 }
