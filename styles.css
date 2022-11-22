@@ -75,6 +75,16 @@ header > * {
     flex-wrap: wrap;
 }
 
+.detalleplanes > h2 {
+    text-decoration: line-through;    
+    text-decoration-thickness: 1.5px;
+}
+
+.detalleplanes > h1 {
+    font-size: 1.5rem;    
+    margin: 0;
+}
+
 .detalleplanes {    
     border-radius: 10px;
     border: 1px solid #1363df;
